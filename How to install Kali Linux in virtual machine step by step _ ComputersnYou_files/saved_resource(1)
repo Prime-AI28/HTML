@@ -1,0 +1,120 @@
+.widget_facebook_likebox, .widget_text, .gplus, .gplus {
+	text-align: center;
+}
+
+.navbar-form .form-control {
+	background-color: rgba(172,172,172,0.35);
+}
+
+.navbar-form .form-control:focus {
+	background-color: white;
+}
+
+.wp-editor-container textarea.wp-editor-area {
+	font-size: 15px;
+	font-family: monaco;
+	height: 500px !important;
+}
+
+.wp-editor-area {
+	font-size: 16px !important;
+}
+
+.note {
+	border-bottom: 2px solid red;
+}
+
+.wpp-post-title {
+	font-size: 1.6rem;
+}
+
+.wpp-list {
+	padding: 15px;
+}
+
+div#jp-relatedposts div.jp-relatedposts-items .jp-relatedposts-post {
+    padding: 10px;
+}
+
+#jp-relatedposts {
+	  padding: 15px;
+    background-color: #e6e2e2;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a  {
+	font-weight: bold;
+}
+
+
+.pager li>a, .pager li>span {
+    display: inline-block;
+    padding: 5px 14px;
+    background-color: #18bc9c;
+    border: 1px solid transparent;
+    border-radius: 1px;
+}
+
+.tags  {
+	background-color:unset;
+	color:unset;
+}
+
+.tags a {
+    padding: .2em;
+    color:unset !important;
+    background-color: lightgrey;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 7px 0 0px 0% !important;
+}
+
+#mc_embed_signup .button:hover {
+    /* background-color: #777; */
+}
+
+#mc_embed_signup input.email {
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    margin: unset;
+    min-height: 32px;
+    width: 100% !important;
+    min-width: 130px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 1px !important;
+}
+
+#mc_embed_signup input {
+    border: 1px solid #999;
+    -webkit-appearance: none;
+}
+
+
+#mc_embed_signup .button {
+    clear: both;
+    background-color: #1c73c4 !important;
+    border: 0 none;
+    border-radius: 4px;
+    letter-spacing: .03em;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    height: 45px !important;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+    transition: all 0.23s ease-in-out 0s;
+}

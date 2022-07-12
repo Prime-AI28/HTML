@@ -1,0 +1,8 @@
+Forest life and nature Protection System Sensors are used to send message to microcontrollers which would be followed by different actions to frighten and Clear the Railway Track Can be used to prevent accident and loss of natural resources present in our bio-sphere.
+Further Scope – Can add an Artificial Intelligence including a system to command the automated train to stop if animals is blocking path.
+
+Project2
+Agricultural Soil Tester and Helping Hand 
+The Bot monitors the condition of soil and helps farmer in various stages of sowing a crop such as weeding, ploughing, irrigation, etc .Sensors are used to check Alkalinity, Purity, moisture content and mineral content of soil. 
+Agricultural farms .Can be used to increase understanding of farmer About Plants which can be grown at that type Of Soil And in that Season.
+can be extended to update farmers with right crop to be sown as per environmental and market conditions and help in putting necessary manures accordingly.Can add automated Sprinklers which can understand the need of Water and Mineral of the soil and automatically Fulfill it by sprinkling water and fertilizers.

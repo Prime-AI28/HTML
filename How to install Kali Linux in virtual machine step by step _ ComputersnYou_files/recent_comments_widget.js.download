@@ -1,0 +1,79 @@
+
+
+document.write(' \
+<style type="text/css" media="screen">\
+	 .dsq-widget ul.dsq-widget-list {\
+	 padding: 0;\
+	 margin: 0;\
+	 text-align: left;\
+	 }\
+	 img.dsq-widget-avatar {\
+	 width: 48px;\
+	 height: 48px;\
+	 border: 0px;\
+	 margin: 0px;\
+	 padding: 0px 3px 3px 0px;\
+	 float: left;\
+	 }\
+	 a.dsq-widget-user {\
+	 font-weight: bold;\
+	 }\
+	 a.dsq-widget-thread {\
+	 font-weight: bold;\
+	 }\
+	 p.dsq-widget-meta {\
+	 clear: both;\
+	 font-size: 80%;\
+	 padding: 0;\
+	 margin: 0;\
+	 }\
+	 li.dsq-widget-item {\
+	 margin: 15px 0;\
+	 list-style-type: none;\
+	 clear: both;\
+	 }\
+	 span.dsq-widget-clout {\
+	 padding: 0 2px;\
+	 background-color: #ff7300;\
+	 color: #fff;\
+	 }\
+	 table.dsq-widget-horiz td {\
+	 padding-right: 15px;\
+	 }\
+	 .dsq-widget-comment p {\
+	 display: inline;\
+	 }\
+	 </style>\
+	 <ul class="dsq-widget-list">\
+	 <li class="dsq-widget-item">\
+	 <a href="https://disqus.com/by/mashkoorqadir/"><img class="dsq-widget-avatar" src="//a.disquscdn.com/1510956940/images/noavatar92.png"></a>\
+	 <a class="dsq-widget-user" href="https://disqus.com/by/mashkoorqadir/">Mashkoor Qadir</a>\
+	 <span class="dsq-widget-comment"><p>Hi Alok Yadav, can you please let me know how...</p></span>\
+	 <p class="dsq-widget-meta"><a href="https://www.computersnyou.com/4734/how-to-setup-juju-manual-environment/">How to setup juju manual environment | ComputersnYou</a>&nbsp;&middot;&nbsp;<a href="https://www.computersnyou.com/4734/how-to-setup-juju-manual-environment/#comment-3616876608">3 weeks ago</a></p>\
+	 </li>\
+	 <li class="dsq-widget-item">\
+	 <a href="https://disqus.com/by/aabatis/"><img class="dsq-widget-avatar" src="//a.disquscdn.com/1510956940/images/noavatar92.png"></a>\
+	 <a class="dsq-widget-user" href="https://disqus.com/by/aabatis/">Aabatis</a>\
+	 <span class="dsq-widget-comment"><p>This didn\'t work for me either. In my case...</p></span>\
+	 <p class="dsq-widget-meta"><a href="https://www.computersnyou.com/4945/re-install-xorg-xserver-completely-ubuntu/">How to re-install xorg xserver completely in ubuntu - ComputersnYou</a>&nbsp;&middot;&nbsp;<a href="https://www.computersnyou.com/4945/re-install-xorg-xserver-completely-ubuntu/#comment-3525009728">2 months ago</a></p>\
+	 </li>\
+	 <li class="dsq-widget-item">\
+	 <a href="https://disqus.com/by/aidan_dillon/"><img class="dsq-widget-avatar" src="//a.disquscdn.com/1510956940/images/noavatar92.png"></a>\
+	 <a class="dsq-widget-user" href="https://disqus.com/by/aidan_dillon/">Aidan Dillon</a>\
+	 <span class="dsq-widget-comment"><p>Thanks, it worked for me. I had to go all the...</p></span>\
+	 <p class="dsq-widget-meta"><a href="https://www.computersnyou.com/4947/how-to-solve-ubuntu-login-loop-quick-tip/">how to solve ubuntu login loop [Quick tip] - ComputersnYou</a>&nbsp;&middot;&nbsp;<a href="https://www.computersnyou.com/4947/how-to-solve-ubuntu-login-loop-quick-tip/#comment-3506010849">3 months ago</a></p>\
+	 </li>\
+	 <li class="dsq-widget-item">\
+	 <a href="https://disqus.com/by/softopia/"><img class="dsq-widget-avatar" src="https://c.disquscdn.com/uploads/users/25828/6136/avatar92.jpg?1502036978"></a>\
+	 <a class="dsq-widget-user" href="https://disqus.com/by/softopia/">Softopia</a>\
+	 <span class="dsq-widget-comment"><p>Nice guide and the tool loos cool lol :D</p></span>\
+	 <p class="dsq-widget-meta"><a href="https://www.computersnyou.com/2803/create-bootable-live-usb-linux-mint-16-petra-windows-linux-mac/">How to create bootable Live USB of Linux Mint ( 16 Petra ) In windows , Linux and Mac</a>&nbsp;&middot;&nbsp;<a href="https://www.computersnyou.com/2803/create-bootable-live-usb-linux-mint-16-petra-windows-linux-mac/#comment-3424559753">4 months ago</a></p>\
+	 </li>\
+	 <li class="dsq-widget-item">\
+	 <a href="https://disqus.com/by/disqus_bn8t62TK2p/"><img class="dsq-widget-avatar" src="https://c.disquscdn.com/uploads/users/13556/4530/avatar92.jpg?1507334052"></a>\
+	 <a class="dsq-widget-user" href="https://disqus.com/by/disqus_bn8t62TK2p/">Josh Gold</a>\
+	 <span class="dsq-widget-comment"><p>How many users would this support simultaneously?</p></span>\
+	 <p class="dsq-widget-meta"><a href="https://www.computersnyou.com/4569/remote-control-mac-from-ubuntu-and-windows-how-to/">Remote Control Mac From Ubuntu and Windows [ How To ] - ComputersnYou</a>&nbsp;&middot;&nbsp;<a href="https://www.computersnyou.com/4569/remote-control-mac-from-ubuntu-and-windows-how-to/#comment-3320782152">6 months ago</a></p>\
+	 </li>\
+	 </ul>\
+');

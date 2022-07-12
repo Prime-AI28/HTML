@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Ryan International Group Of Institutions 
+</title><link rel="stylesheet" type="text/css" href="Ryan%20International%20Group%20Of%20Institutions_files/ryan_Newstyle.css"><link href="Ryan%20International%20Group%20Of%20Institutions_files/css_002.css" rel="stylesheet" type="text/css"><link href="Ryan%20International%20Group%20Of%20Institutions_files/css_003.css" rel="stylesheet"><link href="Ryan%20International%20Group%20Of%20Institutions_files/css.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="Ryan%20International%20Group%20Of%20Institutions_files/ryan_style.css">
+    
+    <script src="Ryan%20International%20Group%20Of%20Institutions_files/1127783733973604.js" async=""></script><script async="" src="Ryan%20International%20Group%20Of%20Institutions_files/fbevents.js"></script><script>
+
+        var OAUTHURL = 'https://accounts.google.com/o/oauth2/auth?';
+        var VALIDURL = 'https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=';
+        var SCOPE = 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email';
+        var CLIENTID = '640652994937-u4j9b9bjg4mk5cutl3majl1gh5h2inot.apps.googleusercontent.com';
+        var REDIRECT = window.location.href;
+        //["http://demoryan.myclassboard.com/Default.aspx"];
+        var LOGOUT = 'https://accounts.google.com/Logout';
+        var TYPE = 'token';
+        var _url = OAUTHURL + 'scope=' + SCOPE + '&client_id=' + CLIENTID + '&redirect_uri=' + REDIRECT + '&response_type=' + TYPE;
+        var acToken;
+        var tokenType;
+        var expiresIn;
+
+        function login() {
+
+            var user; var loggedIn = false;
+
+            var win = window.open(_url, "windowname1", 'width=800, height=600');
+            var pollTimer = window.setInterval(function () {
+                try {
+                    console.log(win.document.URL);
+                    if (win.document.URL.indexOf(REDIRECT) != -1) {
+                        window.clearInterval(pollTimer);
+                        var url = win.document.URL;
+                        acToken = gup(url, 'access_token');
+                        tokenType = gup(url, 'token_type');
+                        expiresIn = gup(url, 'expires_in');
+                        win.close();
+                        validateToken(acToken);
+                    }
+                } catch (e) {
+                }
+            }, 500);
+
+
+        }
+        function validateToken(token) {
+
+            $.ajax({
+                url: VALIDURL + token,
+                data: null,
+
+                success: function (responseText) {
+
+                    getUserInfo();
+                    loggedIn = true;
+                    //$('#loginText').hide();
+                    //$('#logoutText').show();
+                },
+                dataType: "jsonp"
+            });
+        }
+        function getUserInfo() {
+
+            $.ajax({
+                url: 'https://www.googleapis.com/oauth2/v1/userinfo?access_token=' + acToken,
+                data: null,
+                success: function (resp) {
+                    user = resp;
+                    console.log(user);
+
+                    $('#hiddenEmailid').val(user.email);
+                    //window.close();
+                    $('#ImageButton2').click();
+                    //loggedIn = false;
+                    loggedIn = true;
+                    //window.close();
+                },
+                dataType: "jsonp"
+            });
+        }
+
+        //credits: http://www.netlobo.com/url_query_string_javascript.html
+        function gup(url, name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\#&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(url);
+            if (results == null)
+                return "";
+            else
+                return results[1];
+        }
+    </script>
+    <script type="text/javascript" src="Ryan%20International%20Group%20Of%20Institutions_files/jquery.js"></script>
+    
+
+     <script src="Ryan%20International%20Group%20Of%20Institutions_files/WaterMark.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("[id*=txtPwd],[id*=txtUname]").WaterMark();
+
+        //To change the color of Watermark
+        $("[id*=Email]").WaterMark(
+        {
+            WaterMarkTextColor: '#8e9bac'
+        });
+    });
+</script>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        }; if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    } (window,
+document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1127783733973604');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1127783733973604&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+    <form method="post" action="./RyanDefault.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE0NDA2MDA3OGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFDEltYWdlQnV0dG9uMQUMSW1hZ2VCdXR0b24ySg7CL7Mgy8ycHqwJv4fIg0yVFcrLtsne+SA+VJDPbwQ=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Ryan%20International%20Group%20Of%20Institutions_files/WebResource_002.js" type="text/javascript"></script>
+
+
+<script src="Ryan%20International%20Group%20Of%20Institutions_files/WebResource.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4A7FEA03" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAekFGvXev1D2GB5eQNzCDt0Wslw2syD+z30Kf9OLUqmMjPSlu16Yx4QbiDU+dddK1PpkAKvHlFmeWUpJ6tT4i4qYs1X7aZmCc4CU0bkNVODW/l4vhXg33Ax/iPBU4cJFu1yBIE3oZPfVTMnU2cQmQ9qGHpw63BWjlL6sEsBR3/2nQRK6QOxBFvHhJPp9rlQP1M=" type="hidden">
+</div>
+     <div class="login_main">
+            <div class="logo">
+                <a href="#">
+                    <img src="Ryan%20International%20Group%20Of%20Institutions_files/ryan_logo.png" alt="logo" width="303" height="219"></a>
+            </div>
+    <div class="login_block">
+    <div class="login_block_in">
+                    <table width="75%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody><tr>
+            <td><h3>Login to MyClassboard</h3></td>
+          </tr>
+                        <tr>
+                            <td class="list">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+                                    <tbody><tr>
+                                        <td width="14%" valign="middle" height="40" align="right">
+                                            <img src="Ryan%20International%20Group%20Of%20Institutions_files/user_icon.png" width="24" height="22"></td>
+                                        <td width="5%" valign="middle" height="40" align="center">
+                                            <img src="Ryan%20International%20Group%20Of%20Institutions_files/line.png" width="2" height="24"></td>
+                                        <td class="input" width="781%" valign="middle" height="40" align="left">
+                                            
+                                            <input name="txtUname" maxlength="30" id="txtUname" style="display: none; border: medium none; background: rgb(21, 51, 90) none repeat scroll 0% 0%; color: rgb(142, 155, 172); font-size: 18px; line-height: 16px; font-weight: normal; font-family: &quot;Montserrat&quot;, sans-serif; width: 85%; outline: medium none currentcolor; padding: 0px 5px 5px; margin-top: 5px;" type="text"><input maxlength="30" style="display: block; border: medium none; background: rgb(21, 51, 90) none repeat scroll 0% 0%; color: rgb(175, 175, 175); font-size: 18px; line-height: 16px; font-weight: normal; font-family: &quot;Montserrat&quot;, sans-serif; width: 85%; outline: medium none currentcolor; padding: 0px 5px 5px; margin-top: 5px;" readonly="readonly" value="Username" type="text">
+
+
+                                        </td>
+                                        <td width="3%" valign="middle" height="40" align="left">
+                                            <span id="rfvUname" title="Enter user name" style="color:#FF3300;font-weight:bold;position:static;visibility:hidden;">*</span></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="list">
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+
+                                    <tbody><tr>
+                                        <td width="14%" valign="middle" height="40" align="right">
+                                            <img src="Ryan%20International%20Group%20Of%20Institutions_files/password_icon.png" width="20" height="22"></td>
+                                        <td class="input" width="5%" valign="middle" height="40" align="center">
+                                            <img src="Ryan%20International%20Group%20Of%20Institutions_files/line.png" width="2" height="24"></td>
+                                        <td class="input" width="78%" valign="middle" height="40" align="left">
+                                            
+                                            <input name="txtPwd" maxlength="15" id="txtPwd" style="display: none; border: medium none; background: rgb(21, 51, 90) none repeat scroll 0% 0%; color: rgb(142, 155, 172); font-size: 18px; line-height: 16px; font-weight: normal; font-family: &quot;Montserrat&quot;, sans-serif; width: 85%; outline: medium none currentcolor; padding: 0px 5px 5px; margin-top: 5px;" type="password"><input class="" style="display: block; border: medium none; background: rgb(21, 51, 90) none repeat scroll 0% 0%; color: rgb(175, 175, 175); font-size: 18px; line-height: 16px; font-weight: normal; font-family: &quot;Montserrat&quot;, sans-serif; width: 85%; outline: medium none currentcolor; padding: 0px 5px 5px; margin-top: 5px;" readonly="readonly" value="Password" type="text">
+
+                                        </td>
+                                        <td width="3%" valign="middle" height="40" align="left">
+                                            <span id="rfvPwd" title="Enter password" style="color:#FF3300;font-weight:bold;position:static;visibility:hidden;">*</span></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                        <td class="submit" valign="middle" align="center">
+                                            
+                                            <input name="ImageButton1" id="ImageButton1" src="Ryan%20International%20Group%20Of%20Institutions_files/login_btn.png" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ImageButton1", "", true, "k", "", false, false))' type="image">
+                                          
+                                            <input name="ImageButton2" id="ImageButton2" title="Sign up with Google" src="Ryan%20International%20Group%20Of%20Institutions_files/social_google_box.png" style="height:21px;width:21px;display: none;" type="image">
+                                            <input name="hiddenEmailid" id="hiddenEmailid" style="display: none;" type="hidden"><input readonly="readonly" style="color: rgb(142, 155, 172);" value="" type="hidden">
+
+                                            <div id="ValidationSummary1" style="display:none;">
+
+</div>
+                                            
+                                            <input name="hiddenstatus" id="hiddenstatus" type="hidden">
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td style="color: #8e9bac; font-size: 14px;  font-family: 'Montserrat', sans-serif;" valign="middle" height="40" align="center">
+                                            <a id="HyperLink1" href="https://ryan.myclassboard.com/ForgotPassword.aspx">Forgot Password?</a></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="kasper"><a href="http://conquestmediahouse.com/emailer/kaspersky/22-4-2017/" target="_blank"><img src="Ryan%20International%20Group%20Of%20Institutions_files/banner26042017.gif" width="178" height="107"></a></div>
+
+<div class="copyrights">
+	<p>Copyright © Ryan International Group of Institutions. All rights reserved. Powered by <a href="http://www.myclassboard.com/" target="_blank">MyClassboard.com</a> </p>
+</div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("rfvUname"), document.getElementById("rfvPwd"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var rfvUname = document.all ? document.all["rfvUname"] : document.getElementById("rfvUname");
+rfvUname.controltovalidate = "txtUname";
+rfvUname.errormessage = "Enter UserName";
+rfvUname.validationGroup = "k";
+rfvUname.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvUname.initialvalue = "";
+var rfvPwd = document.all ? document.all["rfvPwd"] : document.getElementById("rfvPwd");
+rfvPwd.controltovalidate = "txtPwd";
+rfvPwd.errormessage = "Enter Password";
+rfvPwd.validationGroup = "k";
+rfvPwd.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+rfvPwd.initialvalue = "";
+var ValidationSummary1 = document.all ? document.all["ValidationSummary1"] : document.getElementById("ValidationSummary1");
+ValidationSummary1.showmessagebox = "True";
+ValidationSummary1.showsummary = "False";
+ValidationSummary1.validationGroup = "k";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+
+</body></html>

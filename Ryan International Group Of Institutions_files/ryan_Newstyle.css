@@ -1,0 +1,22 @@
+html{margin:0; padding:0;}
+img{ display:block; border:none;}
+a{ display:block; margin:0; padding:0; text-decoration:none;}
+body{margin:0; padding:0; background:#15335a url(ryan_Newimages/login-bodybg.png) no-repeat center top; background-size:100%;}
+.login_main{ width:565px; margin:0 auto; padding:17px 0 0 0;}
+.logo{ margin:0; padding:135px 0 0px 0; text-align:center;}
+.logo a{ display:inline-block; margin:0; padding:0;}
+.logo a img{ display:block; margin:0 auto;}
+.login_block{ margin:0;  padding:0px;}
+.login_block_in{ background:url(ryan_Newimages/login_bg.png) center no-repeat; padding:50px 40px 65px 33px;}
+.login_block_in table{ padding:0; margin:0 auto;}
+.login_block h3{ display:block; text-align:center; margin:0; padding:0 0 24px 0; font-family: 'Montserrat Alternates', sans-serif; color:#fff; font-size:24px; font-weight:bold;} 
+.login_block .list{ display:block; margin:0; padding:0 0 20px 0; width:100%; background:url(ryan_Newimages/input_bg.png) center top no-repeat;}
+.login_block .label{ display:block; margin:0; padding:0 0 8px 0; color:#434444; font-size:24px; line-height:30px; font-weight:400;font-family: 'Open Sans', sans-serif;}
+.login_block input[type='text']{ display:block; border:none; background:#15335a; color:#8e9bac; font-size:14px; line-height:16px; font-weight:normal; font-family: 'Montserrat', sans-serif; width:85%; outline:none; padding:5px 5px 5px 5px;}
+.login_block input[type='password']{ display:block; border:none; background:#15335a; color:#8e9bac; font-size:14px; line-height:16px; font-weight:normal; font-family: 'Montserrat', sans-serif; width:85%; outline:none; padding:5px 5px 5px 5px;}
+.login_block input[type='submit']{ display:block; border:none; border-radius:5px; text-align:center; width:122px; color:#fff; font-size:24px; line-height:30px; font-weight:400; font-family: 'Open Sans', sans-serif; outline:none; margin: 0 0 15px 3px; padding: 4px 0 7px 0;background:#ed1923; cursor:pointer;}
+.login_block a{ display:inline-block; text-decoration:underline; color:#8e9bac; font-size:16px; line-height:20px; font-weight:400;  font-family: 'Montserrat', sans-serif; margin:0 0 0 6px; }
+.login_block a:hover{ text-decoration:none;}
+.copyrights{ width:100%; text-align:center; padding:10px 0 15px 0;} 
+.copyrights p{ display:block; margin:0; padding:0; color:#ffffff; font-size:12px; line-height:15px; font-weight:normal;  font-family: 'Montserrat', sans-serif;}  
+ .copyrights p a{ display:inline-block; margin:0; padding:0; color:#ffffff; text-decoration:underline;}  
